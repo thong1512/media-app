@@ -39,14 +39,15 @@ class NewsFeed extends StatelessWidget {
                                   flex: 9,
                                   child: Column(
                                     children: [
-                                      Text("Lorem ipsum"),
+                                      Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum eros eu sagittis dapibus. Suspendisse ut vulputate erat. Donec eu aliquet eros. Phasellus tempus quis felis eu tincidunt. Cras fringilla cursus dictum. Nam vestibulum porttitor lorem facilisis ultrices. Nam porta eros orci, nec congue lorem lacinia quis. Quisque quis leo aliquam, maximus mauris tincidunt, aliquet velit. Donec commodo neque vitae nisi lacinia sollicitudin. Praesent sodales consectetur ligula et auctor. Proin velit eros, auctor et lorem ut, lobortis pharetra ante. Duis euismod id turpis vitae porttitor. Fusce interdum auctor tortor at accumsan."),
                                       SizedBox(height: 15),
                                       1 != null
                                           ? ClipRRect(
                                               borderRadius: BorderRadius.all(
                                                   Radius.circular(20)),
                                               child: Image.network(
-                                                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnD2fzLttfBh7Hrh31jROQz5KcbZDrDrFqRA&usqp=CAU"),
+                                                  "https://d32qe1r3a676y7.cloudfront.net/eyJidWNrZXQiOiJibG9nLWVjb3RyZWUiLCJrZXkiOiAiYmxvZy8wMDAxLzAxL2FkNDZkYmI0NDdjZDBlOWE2YWVlY2Q2NGNjMmJkMzMyYjBjYmNiNzkuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IDkwMCwiaGVpZ2h0IjowLCJmaXQiOiJjb3ZlciJ9fX0="),
                                             )
                                           : SizedBox(),
                                       SizedBox(height: 15),
