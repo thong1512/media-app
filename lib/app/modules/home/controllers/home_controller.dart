@@ -6,6 +6,7 @@ import 'package:mediaapp/app/models/user.model.dart';
 class HomeController extends GetxController {
   var followingList = <User>[].obs;
   var currentUser = User().obs;
+  RemoteService remoteService = RemoteService();
 
   @override
   void onInit() {
@@ -24,11 +25,11 @@ class HomeController extends GetxController {
   }
 
   void fetchFollowing() async {
-    var following = await RemoteService.fetchFollowingByUser("96479162");
+    var following = await remoteService.fetchFollowingByUser("96479162");
     followingList.assignAll(following.results);
   }
 
   void getCurrentUser() async {
-    currentUser.value = await RemoteService.getUserDetails("omarmhaimdat");
+    currentUser.value = await remoteService.getUserDetails("omarmhaimdat");
   }
 }
